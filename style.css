@@ -1,0 +1,338 @@
+/* ===========================
+   CitrusBurn 落地页样式
+   =========================== */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f6f6f8;
+  color: #222;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+/* --- 顶部公告栏 --- */
+.top-bar {
+  background: #e63946;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* --- 英雄区 --- */
+.hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: white;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.hero-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-block;
+  background: #e63946;
+  color: white;
+  padding: 6px 18px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  max-width: 650px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+  color: #cdd6f4;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat strong {
+  font-size: 1.8rem;
+  color: #ffce00;
+}
+
+.stat span {
+  font-size: 0.85rem;
+  color: #a6adc8;
+}
+
+/* --- CTA 按钮 --- */
+.cta-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #f72585, #e63946);
+  color: white;
+  padding: 18px 40px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 20px rgba(231, 57, 70, 0.5);
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(231, 57, 70, 0.7);
+}
+
+.cta-btn.large {
+  font-size: 1.2rem;
+  padding: 22px 50px;
+}
+
+.cta-note {
+  font-size: 0.8rem;
+  color: #a6adc8;
+  margin-top: 12px;
+}
+
+/* --- 问题区 --- */
+.problem {
+  background: #fff;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.problem h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1a1a2e;
+}
+
+.pain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+
+.pain-card {
+  background: #fff5f5;
+  border: 1px solid #ffc9c9;
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.problem-note {
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --- 解决方案区 --- */
+.solution {
+  background: #f0f4ff;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.solution h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1a1a2e;
+}
+
+.solution p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  max-width: 800px;
+  margin: 30px auto 0;
+}
+
+.benefit {
+  background: white;
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+/* --- 评价区 --- */
+.testimonials {
+  background: white;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1a1a2e;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.review {
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 28px;
+  text-align: left;
+}
+
+.stars {
+  color: #f59e0b;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.review p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.review strong {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* --- 订单区 --- */
+.order-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.order-section h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.order-section p {
+  font-size: 1.1rem;
+  color: #cdd6f4;
+  margin-bottom: 30px;
+}
+
+.guarantee {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #a6adc8;
+}
+
+/* --- FAQ 区 --- */
+.faq {
+  background: white;
+  padding: 70px 20px;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  margin-bottom: 36px;
+  text-align: center;
+  color: #1a1a2e;
+}
+
+.faq-item {
+  max-width: 750px;
+  margin: 0 auto 28px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 24px;
+}
+
+.faq-item strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  color: #1a1a2e;
+}
+
+.faq-item p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+}
+
+/* --- 页脚 --- */
+footer {
+  background: #111;
+  color: #666;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+
+/* --- 响应式 --- */
+@media (max-width: 600px) {
+  .stats-row { flex-direction: column; gap: 20px; }
+  .hero h1 { font-size: 1.8rem; }
+  .cta-btn { font-size: 1rem; padding: 16px 28px; }
+}
+}
+
+.section p,
+.section ul {
+  max-width: 780px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.feature {
+  padding: 18px;
+  border: 1px solid #e0e7ff;
+  border-radius: 14px;
+  background: #f5fbff;
+  font-weight: 600;
+}
